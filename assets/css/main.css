@@ -1,0 +1,107 @@
+@charset "UTF-8";
+
+/*SCSS миксин для подключения шрифтов*/
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 140%;
+  font-size: 16px;
+  color: #1d1d1d;
+  margin: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+h1 {
+  font-size: 30px;
+  line-height: 140%;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.lesson {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: -webkit-min-content;
+  grid-auto-rows: min-content;
+  gap: 30px;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.lesson a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  height: 100%;
+  border-radius: 10px;
+  border: 1px solid grey;
+  background: aliceblue;
+  padding: 20px;
+}
+
+ol {
+  /* убираем стандартную нумерацию */
+  list-style: none;
+  /* Идентифицируем счетчик и даем ему имя li. Значение счетчика не указано - по умолчанию оно равно 0 */
+  counter-reset: li;
+}
+
+li:before {
+  /* Определяем элемент, который будет нумероваться — li. Псевдоэлемент before указывает, что содержимое, вставляемое при помощи свойства content, будет располагаться перед пунктами списка. Здесь же устанавливается значение приращения счетчика (по умолчанию равно 1). */
+  counter-increment: li;
+  /* С помощью свойства content выводится номер пункта списка. counters() означает, что генерируемый текст представляет собой значения всех счетчиков с таким именем. Точка в кавычках добавляет разделяющую точку между цифрами, а точка с пробелом добавляется перед содержимым каждого пункта списка */
+  content: counters(li, ".") ". ";
+}
+
+li {
+  margin: 10px 0;
+}
+
+header,
+footer {
+  background: darkblue;
+  color: #fff;
+  text-align: center;
+  font-size: 30px;
+  line-height: 120%;
+  padding: 30px 10px;
+  margin: 0 0 30px;
+}
+
+footer {
+  margin: 50px 0 0;
+  height: 100px;
+}
+
+footer a {
+  color: #fff;
+}
+
+pre {
+  border: 1px solid gray;
+  background: aliceblue;
+  padding: 20px;
+  display: block;
+  font-size: 16px !important;
+  line-height: 110% !important;
+}

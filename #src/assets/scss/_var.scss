@@ -1,0 +1,38 @@
+/*SCSS миксин для подключения шрифтов*/
+@mixin font($font_name, $file_name, $weight, $style) {
+  @font-face {
+    font-family: $font_name;
+    font-display: swap;
+    src: url("../fonts/#{$file_name}.woff") format("woff"), url("../fonts/#{$file_name}.eot"), url('../fonts/#{$file_name}.eot?#iefix') format('embedded-opentype'), url('../fonts/#{$file_name}.svg') format('svg'), url('../fonts/#{$file_name}.ttf') format('truetype'), url("../fonts/#{$file_name}.woff2") format("woff2");
+    font-weight: #{$weight};
+    font-style: #{$style};
+  }
+
+}
+//миксин для резиноврй верстки
+@mixin calc($css, $max, $min, $from:1320, $to:320) {
+#{$css}: calc(#{$min}px + (#{$max} - #{$min}) * ((100vw - #{$to}px) / (#{$from} - #{$to})));
+
+}
+//шрифты
+$m:'Inter-Medium';
+$r:'Inter-Regular';
+$b:'Inter-Bold';
+$sb:'Inter-SemiBold';
+$lsb:'Lexend-SemiBold';
+
+//размеры
+$wrap:1110 + px;
+$wrapPaddding:15 + px;
+$mob:(max-width: 700px), (max-width: 850px);
+$mobto: (max-height: 500px );
+$ipadv: (max-width:768px);
+$ipadg: (max-width:1024px);
+$wr: (max-width:#{$wrap});
+$full: (max-width:1600px);
+$nout: (max-width:1400px);
+
+//цвета
+$red:#ED3F27;
+$blue:#4D6C9E;
+$black:#1D1D1D;
