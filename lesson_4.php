@@ -126,6 +126,7 @@
                 if($_REQUEST['name']==$a){
                     echo 'Ты супер';
                 }
+
             }
             global $test;
             debug($GLOBALS); ?>

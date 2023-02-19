@@ -2,9 +2,8 @@
 	include 'header.php';
 	include 'functions.php';
 	global $test;
-	 $test='test';
+	$test = 'test';
 
-	debug($GLOBALS);
 ?>
 <?
 	$ar    = [
@@ -24,15 +23,22 @@
 			'link' => 'lesson_4.php',
 			'name' => 'Суперглобальные переменные<br>lesson_4.php',
 		],
-        	[
+		[
 			'link' => 'lesson_5.php',
 			'name' => 'Работа со строками<br>lesson_5.php',
+		],
+		[
+			'link' => 'lesson_6.php',
+			'name' => 'Условные операторы if, else, switch<br>lesson_6.php',
 		],
 	];
 	$train = [
 		[
 			'link' => 'train.php',
 			'name' => 'Решение задач МАССИВЫ<br>train.php',
+		],	[
+			'link' => 'ifelse.php',
+			'name' => 'Решение задач ifelse<br>ifelse.php',
 		],
 	];
 ?>

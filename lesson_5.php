@@ -2,7 +2,10 @@
 	include 'functions.php';
 	include 'header.php';
 
+
 ?>
+
+
     <header><?= $title; ?></header>
     <div class="container">
         <h3>Ссылка на доки <a href="https://www.php.net/manual/ru/function.str-contains">php.net</a></h3>

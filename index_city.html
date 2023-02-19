@@ -8,160 +8,184 @@
     <!-- <link rel="stylesheet" href="css/null.css">
     <link rel="stylesheet" href="css/main.css"> -->
 
-    </head>
+</head>
 <style>
-  .body{
-    background:-webkit-linear-gradient(360deg, #f4e4dd,#f0dda8,#c9f07a);                          background: linear-gradient(360deg, #f4e4dd,#f0dda8,#c9f07a);
-}
+   body {
+        background: -webkit-linear-gradient(360deg, #f4e4dd, #f0dda8, #c9f07a);
+        background: linear-gradient(360deg, #f4e4dd, #f0dda8, #c9f07a);
+    }
 
-  h1{
-    font-size: 40px;
-    color: indianred;
-    display: flex;
-    justify-content: center;
-    margin: 0 auto;
-}
-.comp, .history{
-    width: 1200px;
-    height: 50px;
-    background: -webkit-linear-gradient(to right, #f7797d, #FBD786, #C6FFDD); 
-    background: linear-gradient(to right, #f7797d, #FBD786, #C6FFDD); 
-    margin: 50px auto;
-    border-radius: 10px;
-    border: 1px solid #000;
-}
-.player{
-    display: grid;
-    justify-content: center;
-    grid-template-columns: 1fr 3fr;
-    grid-column-gap: 10px;
-    margin-bottom: 50px;
-}
+    h1 {
+        font-size: 40px;
+        color: indianred;
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+    }
 
-.player span{
- justify-self: end;
- font-size: 20px;
- font-weight: 800;
- line-height: 130%;
- color: darkgreen;
-}
-.player form{
-    display: grid;
-    grid-template-columns: 1fr 30px 150px 1fr;
-    grid-column-gap: 10px;
-    justify-content: start;
-}
-.player span{
- justify-self: end;
- font-size: 20px;
- font-weight: 800;
- line-height: 130%;
- color: darkgreen;
-}
-.player__city-input{
-font-size: 15px;
-line-height: 175%;
- font-weight: 300;
- border-radius: 10px;
-border: 1px solid #000;
-}
-.player__city-label{
-font-size: 20px;
- font-weight: 800;
- line-height: 130%;
- color: darkgreen;
-}
-.player__city-button{
-    width: 200px;
-    height: 30px;
-    border-radius: 10px;
-    border: 1px solid #000;
-    background: linear-gradient(to right, #f7797d, #FBD786, #C6FFDD); 
-}
-.score{
-    display: grid;
-    justify-content: center;
-    grid-template-columns: 1fr 100px 30px 100px 1fr;
-    grid-column-gap: 15px;
-    margin-bottom: 50px;
+    .comp, .history {
+        font-size: 30px;
+        line-height: 150%;
+        color: darkslategray;
+        padding: 5px;
+        align-content: center;
+        width: 1200px;
+        height: auto;
+        background: -webkit-linear-gradient(to right, #f7797d, #FBD786, #C6FFDD);
+        background: linear-gradient(to right, #f7797d, #FBD786, #C6FFDD);
+        margin: 50px auto;
+        border-radius: 10px;
+        border: 1px solid #000;
+    }
 
-}
-.score div{
-    width: 100px;
-    height: 50px;
-    border-radius: 10px;
-    border: 1px solid #000;
-    background: linear-gradient(to right, #f7797d, #FBD786, #C6FFDD); 
-}
-.score .score__comp{
-    justify-self: end;
+    .player {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 1fr 3fr;
+        grid-column-gap: 10px;
+        margin-bottom: 50px;
+    }
 
-}
-.score span{
-    justify-self: center;
-    align-self: center;
-}
-.score__player{
-    justify-self: start;
-}
-h2{
-   font-size: 30px;
-    color: indianred;
-    display: flex;
-    justify-content: center;
-    margin: 30px auto; 
-}
-.score span{
-  
-  font-size: 20px;
-  color: darkgreen;
-  font-weight: 600;
-  line-height: 150%;
-}
-.score .score__left{
-  justify-self: end;
-}
+    .player span {
+        justify-self: end;
+        font-size: 20px;
+        font-weight: 800;
+        line-height: 130%;
+        color: darkgreen;
+    }
 
-.score .score__right{
-  justify-self: start;
-}
-.history{
-  column-count: 10;
-  column-width: 60px;
-  column-gap: 15px;
-  column-fill: auto;
-  overflow: hidden;
+    .player form {
+        display: grid;
+        grid-template-columns: 1fr 30px 150px 1fr;
+        grid-column-gap: 10px;
+        justify-content: start;
+    }
 
-}
+    .player span {
+        justify-self: end;
+        font-size: 20px;
+        font-weight: 800;
+        line-height: 130%;
+        color: darkgreen;
+    }
+
+    .player__city-input {
+        font-size: 15px;
+        line-height: 175%;
+        font-weight: 300;
+        border-radius: 10px;
+        border: 1px solid #000;
+    }
+
+    .player__city-label {
+        font-size: 20px;
+        font-weight: 800;
+        line-height: 130%;
+        color: darkgreen;
+    }
+
+    .player__city-button {
+        width: 200px;
+        height: 30px;
+        border-radius: 10px;
+        border: 1px solid #000;
+        background: linear-gradient(to right, #f7797d, #FBD786, #C6FFDD);
+    }
+
+    .score {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 1fr 110px 30px 110px 1fr;
+        grid-column-gap: 15px;
+        margin-bottom: 50px;
+
+    }
+
+    .score div {
+        display: flex;
+        width: 100px;
+        height: 50px;
+        border-radius: 10px;
+        border: 1px solid #000;
+        background: linear-gradient(to right, #f7797d, #FBD786, #C6FFDD);
+        font-size: 30px;
+        line-height: 150%;
+        color: darkslategray;
+        padding: 5px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .score span {
+        justify-self: center;
+        align-self: center;
+    }
+
+
+    h2 {
+        font-size: 30px;
+        color: indianred;
+        display: flex;
+        justify-content: center;
+        margin: 30px auto;
+    }
+
+    .score span {
+        font-size: 20px;
+        color: darkgreen;
+        font-weight: 600;
+        line-height: 150%;
+    }
+
+    .score .score__left {
+        justify-self: end;
+
+    }
+
+    .score .score__right {
+        justify-self: start;
+    }
+
+    .history {
+        /*column-count: 10;!
+        column-width: 60px;
+        column-gap: 15px;
+        column-fill: auto;
+        overflow: hidden;*!*/
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+
+
+
+    }
 </style>
 
 <body>
-  <h1>Поиграем в города?</h1>
-  <div class="comp"></div>
-  <div class="player">
+<h1>Поиграем в города?</h1>
+<div class="comp">Барселона</div>
+<div class="player">
     <span class="player__text">Твой город:</span>
     <form class="player__city" action="" method="GET">
-      <input class="player__city-input" type="text" name="city" placeholder="Введи свой город"> </input>
-      <input id="city" type="checkbox"></input>
-      <label class="player__city-label" for="city">Пропустить ход</label> 
-      <input class="player__city-button" type="submit" value="Отправить"></input>
+        <input class="player__city-input" type="text" name="city" placeholder="Введи свой город">
+        <input name="city" type="checkbox" id="city">
+        <label class="player__city-label" for="city">Пропустить ход</label>
+        <input class="player__city-button" type="submit" value="Отправить">
     </form>
-  </div>
-  <h2>Счет:</h2>
-  <div class="score">
+</div>
+<h2>Счет:</h2>
+<div class="score">
     <span class="score__left">Игрок</span>
     <div class="score__comp">0</div>
     <span>:</span>
     <div class="score__player">0</div>
     <span class="score__right">Компьютер</span>
-  </div>
-  <h2>История игры:</h2>
-  <div class="history">Амстердам Москва Волгоград Орел Шахтерск Осло Тула Амстердам Москва Волгоград Орел Шахтерск Осло Тула Амстердам Москва Волгоград Орел Шахтерск Осло Тула Амстердам Москва Волгоград Орел Шахтерск Осло Тула Амстердам Москва Волгоград Орел Шахтерск Осло Тула Амстердам Москва Волгоград Орел Шахтерск Осло Тула </div>
-
-
-
-
-
+</div>
+<h2>История игры:</h2>
+<div class="history">Антананариву
+</div>
 
 
 </body>
