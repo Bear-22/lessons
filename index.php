@@ -34,9 +34,16 @@
 	];
 	$train = [
 		[
+			'link' => 'captcha/form_captcha.php',
+			'name' => 'Создание капчи<br>captcha/form_captcha.php',
+		],	[
+			'link' => 'index_city.php',
+			'name' => 'Игра в города<br>index_city.php',
+		],
+		[
 			'link' => 'train.php',
 			'name' => 'Решение задач МАССИВЫ<br>train.php',
-		],	[
+		], [
 			'link' => 'ifelse.php',
 			'name' => 'Решение задач ifelse<br>ifelse.php',
 		],
