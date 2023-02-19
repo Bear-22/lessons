@@ -56,7 +56,7 @@ let path = {
     wp: {
         css: wp + '/css/',
         js: wp + '/js/',
-        img: wp + '/images/',
+        img: wp + '/img/',
         fonts: wp + '/fonts/',
         lib: wp + '/lib/',
     },
@@ -67,7 +67,7 @@ let path = {
 
         js: sourse + '/assets/js/*.js',
 
-        img: sourse + '/assets/images/**/*.{jpg,jpeg,png,svg,gif,ico,webp}',
+        img: sourse + '/assets/img/**/*.{jpg,jpeg,png,svg,gif,ico,webp}',
         fontsTTF: sourse + '/assets/fonts/fonts_ttf/*.ttf',
         fontsConvert: sourse + '/assets/fonts/fonts_convert/*.{svg,eot,ttf,woff,woff2,otf}',
         lib: sourse + '/assets/lib/**/*.*',
